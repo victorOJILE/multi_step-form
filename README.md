@@ -11,7 +11,6 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 
@@ -33,13 +32,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/laptop_first-step.png)
+![](./public/laptop_second_step.png)
+![](./public/laptop_third_step.png)
+![](./public/laptop_fourth_step.png)
+![](./public/laptop_last_step.png)
+![](./public/mobile_third_step.png)
 
+You can view the rest using the live link below
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Here is the solution url](https://github.com/victorOJILE/multi_step-form)
+- [Check out this project live here](https://victorojile.github.io/multi_step-form/)
 
 ## My process
 
@@ -58,11 +63,7 @@ Users should be able to:
 
 This was actually another exercise, working with React, and its context API.
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ## Author
 
 - Website - [Ojile Victor](https://victorojile.github.io/portfolio)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/victorOJILE)
+- Frontend Mentor - [@victorOJILE](https://www.frontendmentor.io/profile/victorOJILE)
