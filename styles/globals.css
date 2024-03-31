@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: "ubuntu bold";
+	src: url(../public/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+	font-family: "ubuntu medium";
+	src: url(../public/fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+	font-family: "ubuntu regular";
+	src: url(../public/fonts/Ubuntu-Regular.ttf);
+}
+
+body {
+	--marine: hsl(213, 96%, 18%);
+	--purplish: hsl(243, 100%, 62%);
+	--pastel: hsl(228, 100%, 84%);
+	--lightBlue: hsl(206, 94%, 87%);
+	--strawberry: hsl(354, 84%, 57%);
+	--coolGray: hsl(231, 11%, 63%);
+	--lightGray: hsl(229, 24%, 87%);
+	--magnolia: hsl(217, 100%, 97%);
+	--alabaster: hsl(231, 100%, 99%);
+	font-family: "ubuntu regular";
+}
+
+h1, h2, h3, h4, h5 {
+	color: var(--marine);
+	font-family: "ubuntu bold";
+}
+
+.fontBold {
+	font-family: "ubuntu bold";
+}
+
+.fontMedium {
+	font-family: "ubuntu medium";
+}
+
+.stepSection {
+	background: url(../public/bg-sidebar-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat
+}
+
+.flex-ac {
+	display: flex;
+	align-items: center
+}
+
+.pastel {
+	color: var(--pastel);
+}
+
+.strawberry {
+	color: var(--strawberry);
+}
+
+.lightGray {
+	color: var(--lightGray)
+}
+
+.coolGray {
+	color: var(--coolGray)
+}
+
+.purplish {
+	color: var(--purplish)
+}
+
+.bg-purplish {
+	background-color: var(--purplish);
+}
+
+.magnolia {
+	color: var(--magnolia)
+}
+
+.bg-magnolia {
+	background-color: var(--magnolia)
+}
+
+.marine {
+	color: var(--marine)
+}
+
+.bg-marine {
+	background-color: var(--marine)
+}
+
+.bg-alabaster {
+	background-color: var(--alabaster)
+}
+
+.step {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	color: var(--lightGray);
+	border: 1px solid var(--lightGray);
+	font-weight: bold
+}
+
+.active-step {
+	background-color: var(--magnolia);
+	color: var(--marine);
+}
+
+/* Switch Toggle */
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.6em;
+  height: 1.2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: hsl(213, 96%, 18%);
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.8em;
+  width: 0.8em;
+  top: 50%;
+		transform: translate(.2em, -50%);
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #0974f1;
+}
+
+.switch input:checked + .slider:before {
+  transform: translate(1.6em, -50%);
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+
+	body {
+		background-color: var(--magnolia)
+	}
+	
+	.stepSection {
+		background: url(../public/bg-sidebar-desktop.svg);
+		background-size: cover;
+		background-repeat: no-repeat
+	}
+}
+
+@media (min-width: 1300px) {
+	html {
+		font-size: 22px;
+	}
+}
